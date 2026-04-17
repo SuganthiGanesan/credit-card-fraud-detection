@@ -11,7 +11,6 @@ A machine learning project that uses **Logistic Regression** to detect fraudulen
 - [Model Performance](#model-performance)
 - [Technologies Used](#technologies-used)
 - [Results](#results)
-- [Future Improvements](#future-improvements)
 - [License](#license)
 
 ## 🎯 Overview
@@ -95,3 +94,76 @@ weighted avg       1.00      1.00      1.00     56962
 📌 Confusion Matrix:
  [[56850    14]
  [   34    64]]
+
+ A confusion matrix heatmap will also be displayed.
+
+## 📈 Model Performance
+
+| Metric | Value |
+|--------|-------|
+| Accuracy | ~99.91% |
+| Precision (Fraud) | ~88% |
+| Recall (Fraud) | ~61% |
+| F1-Score (Fraud) | ~72% |
+
+**Note**: High accuracy is expected due to class imbalance. Focus on precision and recall for the fraud class.
+
+## 🔧 Technologies Used
+
+- **Python 3.x**
+- **Pandas** - Data manipulation
+- **NumPy** - Numerical computations
+- **Scikit-learn** - Machine learning
+- **Matplotlib** - Plotting
+- **Seaborn** - Statistical visualization
+
+## 📊 Results
+
+The model successfully identifies fraudulent transactions with:
+- High overall accuracy (99.91%)
+- Good precision for fraud detection (88%)
+- Moderate recall (61%), meaning some frauds are missed
+
+### Confusion Matrix
+![Confusion Matrix](confusion_matrix.png)
+
+The confusion matrix shows:
+- **True Negatives**: Correctly identified normal transactions
+- **False Positives**: Normal transactions flagged as fraud
+- **False Negatives**: Frauds missed by the model
+- **True Positives**: Correctly identified frauds
+
+## 🚀 Future Improvements
+
+- [ ] Handle class imbalance using SMOTE or undersampling
+- [ ] Try advanced models (Random Forest, XGBoost, Neural Networks)
+- [ ] Implement cross-validation
+- [ ] Add feature importance analysis
+- [ ] Create a web interface for real-time prediction
+- [ ] Optimize threshold for better recall
+- [ ] Add ROC-AUC curve analysis
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+## 🙏 Acknowledgments
+
+- Dataset provided by [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+- Inspired by real-world fraud detection systems
+- Thanks to the open-source community
+
+---
+
+⭐ If you found this project helpful, please consider giving it a star!
