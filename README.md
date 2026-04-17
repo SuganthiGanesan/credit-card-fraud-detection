@@ -75,3 +75,23 @@ python fraud_detection.py
 ```
 
 ### Expected Output
+📊 Dataset Loaded!
+Total rows: 284807
+Fraud cases: 492
+
+✅ Accuracy: 0.9992
+
+🧾 Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     56864
+           1       0.82      0.65      0.73        98
+
+    accuracy                           1.00     56962
+   macro avg       0.91      0.83      0.86     56962
+weighted avg       1.00      1.00      1.00     56962
+
+
+📌 Confusion Matrix:
+ [[56850    14]
+ [   34    64]]
